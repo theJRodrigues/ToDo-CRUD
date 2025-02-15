@@ -1,0 +1,31 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "category": "mercado",
+      "content": [
+        {
+          "id": 1,
+          "titulo": "Coisas a comprar",
+          "conteudo": "Leite arroz frutas carnes"
+        },
+        {
+          "id": 2,
+          "titulo": "Coisas a comprar",
+          "conteudo": "Leite arroz frutas carnes"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "estudos",
+      "content": [
+        {
+          "id": 1,
+          "titulo": "react",
+          "conteudo": "teste"
+        }
+      ]
+    }
+  ]
+}
