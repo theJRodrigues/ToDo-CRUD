@@ -1,21 +1,21 @@
-interface Category{
-    id: string,
-    category: string
+interface Categories {
+  id: string;
+  category: string;
 }
 
-interface AsideCategoiresProps{
-    categories: Category[]
+interface AsideCategoiresProps {
+  categories: Categories[];
 }
 
-const AsideCategoires = ({categories}: AsideCategoiresProps) => {
-    console.log(categories)
+const AsideCategoires = ({ categories }: AsideCategoiresProps) => {
+  console.log(categories);
   return (
-    <aside>
+    <aside className="bg-blue-950 p-3 rounded-2xl">
       <nav>
         <ul>
-            {categories?.map((category) =>(
-                <li key={category.id}>{category.category}</li>)
-            )}
+          {categories?.map((category) => (
+            <li key={category.id}>{category.category}</li>
+          ))}
         </ul>
       </nav>
     </aside>

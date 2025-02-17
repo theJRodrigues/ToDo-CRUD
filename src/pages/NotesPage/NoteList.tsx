@@ -1,16 +1,16 @@
 import AsideCategoires from "../../components/AsideCategories/AsideCategoires";
+import NotesSection from "../../components/NotesSection/NotesSection";
 import api from "../../services/Api";
 import { useQuery } from "@tanstack/react-query";
 
-
-export interface Notes{
-  id: string,
-  category: string,
-  contents:{
-    id: string,
-    title: string,
-    content: string
-  }
+export interface Notes {
+  id: string;
+  category: string;
+  contents: {
+    id: string;
+    title: string;
+    content: string;
+  };
 }
 const NoteList = () => {
   const { data: notes, isLoading } = useQuery<Notes[]>({
@@ -21,15 +21,18 @@ const NoteList = () => {
     },
   });
 
-  const categories = notes?.map(note => {
-    return {id: note.id, category: note.category}})
-  return (
-    <main className="w-full grow-1">
-      <h1>Notes</h1>
-     <section>
-      <AsideCategoires categories={categories}/>
+  const categories =
+    notes?.map((note) => {
+      return { id: note.id, category: note.category };
+    }) || [];
 
-     </section>
+  return (
+    <main className="grow-1 content-center text-white">
+      <div className="grid grid-cols-auto gap-1">
+        <h1 className="col-span-2 bg-blue-950 p-3 rounded-2xl">Notes</h1>
+        <AsideCategoires categories={categories} />
+        <NotesSection />
+      </div>
     </main>
   );
 };

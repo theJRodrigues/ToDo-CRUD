@@ -1,5 +1,11 @@
 @import "tailwindcss";
-
-.active{
+@theme{
+    --spacing: 10px;
+}
+.is-active{
     border-bottom: 2px solid white;
+}
+
+#root{
+    @apply bg-slate-700
 }
