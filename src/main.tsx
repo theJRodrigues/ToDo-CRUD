@@ -8,10 +8,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 //Pages
 import Home from "./pages/Home.tsx";
-import TodoList from "./pages/TodoPage/TodoList.tsx";
-import CreateTodo from "./pages/TodoPage/CreateTodo.tsx";
-import UpdateTodo from "./pages/TodoPage/UpdateTodo.tsx";
-import DeleteTodo from "./pages/TodoPage/DeleteTodo.tsx";
+import NoteList from "./pages/NotesPage/NoteList.tsx";
+import CreateTodo from "./pages/NotesPage/CreateTodo.tsx";
+import UpdateTodo from "./pages/NotesPage/UpdateTodo.tsx";
+import DeleteTodo from "./pages/NotesPage/DeleteTodo.tsx";
 import About from "./pages/About.tsx";
 
 //Components
@@ -27,7 +27,7 @@ createRoot(document.getElementById("root")!).render(
       <QueryClientProvider client={queryClient}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="todo-list" element={<TodoList />}>
+          <Route path="todo-list" element={<NoteList />}>
             <Route path="create-todo" element={<CreateTodo />} />
             <Route path="delete-todo" element={<DeleteTodo />} />
             <Route path="update-todo" element={<UpdateTodo />} />

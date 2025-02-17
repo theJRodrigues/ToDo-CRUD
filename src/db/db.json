@@ -1,29 +1,29 @@
 {
-  "categories": [
+  "notes": [
     {
-      "id": 1,
+      "id": "609fdc5e-ebc3-492f-91b5-9d70757a55c9",
       "category": "mercado",
-      "content": [
+      "contents": [
         {
-          "id": 1,
-          "titulo": "Coisas a comprar",
-          "conteudo": "Leite arroz frutas carnes"
+          "id": "7245e2e6-364c-4719-a102-e7ce2c253330",
+          "title": "Coisas a comprar",
+          "content": "Leite arroz frutas carnes"
         },
         {
-          "id": 2,
-          "titulo": "Coisas a comprar",
-          "conteudo": "Leite arroz frutas carnes"
+          "id": "f417259c-80bc-41b4-a4ff-27bd88045db9",
+          "title": "Coisas a comprar",
+          "content": "Leite arroz frutas carnes"
         }
       ]
     },
     {
-      "id": 2,
+      "id": "2a65f439-66ec-42e6-9f5a-5a951c2eec48",
       "category": "estudos",
-      "content": [
+      "contents": [
         {
-          "id": 1,
-          "titulo": "react",
-          "conteudo": "teste"
+          "id": "a17b331c-f017-4a1a-90ef-76bc51e216b7",
+          "title": "react",
+          "content": "teste"
         }
       ]
     }
