@@ -1,31 +1,26 @@
 {
-  "notes": [
-    {
-      "id": "609fdc5e-ebc3-492f-91b5-9d70757a55c9",
-      "category": "mercado",
-      "contents": [
-        {
-          "id": "7245e2e6-364c-4719-a102-e7ce2c253330",
-          "title": "Coisas a comprar",
-          "content": "Leite arroz frutas carnes"
-        },
-        {
-          "id": "f417259c-80bc-41b4-a4ff-27bd88045db9",
-          "title": "Coisas a comprar",
-          "content": "Leite arroz frutas carnes"
-        }
-      ]
-    },
-    {
-      "id": "2a65f439-66ec-42e6-9f5a-5a951c2eec48",
-      "category": "estudos",
-      "contents": [
-        {
-          "id": "a17b331c-f017-4a1a-90ef-76bc51e216b7",
-          "title": "react",
-          "content": "teste"
-        }
-      ]
-    }
-  ]
+  "categories": [
+  {
+    "id": "609fdc5e-ebc3-492f-91b5-9d70757a55c9",
+    "name": "mercado"
+  },
+  {
+    "id": "2a65f439-66ec-42e6-9f5a-5a951c2eec48",
+    "name": "estudos"
+  }
+],
+"contents": [
+  {
+    "id": "f417259c-80bc-41b4-a4ff-27bd88045db9",
+    "categoryId": "609fdc5e-ebc3-492f-91b5-9d70757a55c9",
+    "title": "Coisas a comprar",
+    "content": "Leite arroz frutas carnes"
+  },
+  {
+    "id": "a17b331c-f017-4a1a-90ef-76bc51e216b7",
+    "categoryId": "2a65f439-66ec-42e6-9f5a-5a951c2eec48",
+    "title": "react",
+    "content": "teste"
+  }
+]
 }
