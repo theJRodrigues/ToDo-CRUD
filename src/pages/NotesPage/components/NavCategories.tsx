@@ -1,5 +1,6 @@
 import React from "react";
-import { Categories } from "../../../hooks/useGetCategories";
+import { Categories } from "../NoteList";
+
 
 interface CategoriesProps {
   categories: Categories[],
