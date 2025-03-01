@@ -1,11 +1,8 @@
 @import "tailwindcss";
 @theme{
     --spacing: 10px;
+    --color-modal: rgba(145, 139, 139, 0.26);
 }
-.is-active{
-    border-bottom: 2px solid white;
-}
-
-#root{
-    @apply bg-slate-700
+.active{
+    border-bottom: 2px solid rgb(255, 255, 255);
 }

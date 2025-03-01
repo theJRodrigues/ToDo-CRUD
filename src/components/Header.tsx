@@ -1,18 +1,16 @@
-import { NavLink, NavLinkProps } from "react-router";
+import { NavLink } from "react-router";
 
 const Header = () => {
-  const isActive: NavLinkProps["className"] = ({ isActive }) =>
-    isActive ? "is-active" : "";
   return (
     <header className="bg-indigo-700 w-full text-white">
       <nav className="flex  gap-2">
-        <NavLink to={"/"} className={isActive}>
+        <NavLink to={"/"} >
           Home
         </NavLink>
-        <NavLink to={"/todo-list"} className={isActive}>
-          ToDo List
+        <NavLink to={"/notes"}>
+          Notes
         </NavLink>
-        <NavLink to={"/about"} className={isActive}>
+        <NavLink to={"/about"}>
           Sobre
         </NavLink>
       </nav>
