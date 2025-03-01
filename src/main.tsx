@@ -21,7 +21,7 @@ import Footer from "./components/Footer.tsx";
 const queryClient = new QueryClient();
 
 createRoot(document.getElementById("root")!).render(
-  
+  <StrictMode>
     <BrowserRouter>
       <Header />
       <QueryClientProvider client={queryClient}>
@@ -38,4 +38,5 @@ createRoot(document.getElementById("root")!).render(
       </QueryClientProvider>
       <Footer />
     </BrowserRouter>
+  </StrictMode>
 );
