@@ -4,8 +4,8 @@ import api from "../services/Api";
 const useGetData = <T>(url: string, queryKey: string) => {
   const { data, error, isLoading } = useQuery<T[]>({
     queryKey: [queryKey],
-    queryFn: async () => {
-      const res = await api.get(url);
+    queryFn: async ({signal}) => {
+      const res = await api.get(url, {signal});
       return res.data;
     },
     refetchOnWindowFocus: false,

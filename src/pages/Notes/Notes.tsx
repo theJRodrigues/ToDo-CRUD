@@ -1,5 +1,5 @@
-import AsideBar from "./components/AsideBar/AsideBar";
-import NotesSection from "./components/NotesSection/NotesSection";
+import AsideBar from "./components/aside-bar/AsideBar";
+import NotesSection from "./components/notes-section/NotesSection";
 import { Outlet } from "react-router";
 
 const Notes = () => {
